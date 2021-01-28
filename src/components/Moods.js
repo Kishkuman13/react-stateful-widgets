@@ -54,9 +54,8 @@ export default function Moods() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'crimson', /* STEP 2 */
+    color: (mood === happyMood ? 'royalblue' : 'crimson'), /* STEP 2 */
   };
-  {mood === happyMood ? style.color = 'royalblue' : style.color = 'crimson'}
 
   return (
     <div className='widget-moods container'>
